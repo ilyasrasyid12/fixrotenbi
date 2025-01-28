@@ -51,17 +51,17 @@
     </section>
 
     <section class="px-8 md:px-24 mt-10 md:mt-16 flex flex-col items-center text-center">
-        <h2 class="text-2xl font-semibold mb-4 text-4xl text-black md:w-2/3">TENTANG <span class="text-primary">KAMI</span></h2>
+        <h2 class=" font-semibold mb-4 text-4xl text-black md:w-2/3">TENTANG <span class="text-primary">KAMI</span></h2>
         <p class="text-lg md:text-xl md:w-2/3">Rotenbi adalah industri kriya anyaman yang fokus menciptakan inovasi berkelanjutan yang memiliki nilai seni, budaya, modernisasi, dan ramah lingkungan. Produk yang dihasilkan seperti tas, dompet, souvenir, dan produk unik lainnya.</p>    
     </section>
 
     <section class="px-8 md:px-24 mt-10 md:mt-16 flex flex-col items-center text-center">
-        <h2 class="text-2xl font-semibold mb-4 text-4xl text-primary md:w-2/3">VISI</h2>
+        <h2 class=" font-semibold mb-4 text-4xl text-primary md:w-2/3">VISI</h2>
         <p class="text-lg md:text-xl md:w-2/3">“Memberdayakan perajin lokal dengan menciptakan produk anyaman berkelanjutan yang mendukung budaya dan ramah lingkungan.”</p>    
     </section>
 
     <section class="px-8 md:px-24 mt-10 md:mt-16 flex flex-col items-center text-center">
-        <h2 class="text-2xl font-semibold mb-4 text-4xl text-primary md:w-2/3">MISI</h2>
+        <h2 class=" font-semibold mb-4 text-4xl text-primary md:w-2/3">MISI</h2>
         <p class="text-lg md:text-xl md:w-2/3">“Memberdayakan perajin lokal dengan menciptakan produk anyaman berkelanjutan yang mendukung budaya dan ramah lingkungan.”</p>    
     </section>
 

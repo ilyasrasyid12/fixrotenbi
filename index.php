@@ -16,9 +16,9 @@
         <div class="flex">
           <img src="components/logo/logo.png" class="py-2 w-16 md:w-24 mr-2 md:mr-16">
           <ul id="menu" class="hidden md:flex items-center gap-x-4 md:gap-x-8 text-sm md:text-base">
-            <li><a href="#">Tentang Kami</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Kontak</a></li>
+            <li><a href="./about/">Tentang Kami</a></li>
+            <li><a href="./gallery-page/">Gallery</a></li>
+            <li><a href="./contact/">Kontak</a></li>
           </ul>
         </div>
         <div class="flex items-center gap-x-8">
