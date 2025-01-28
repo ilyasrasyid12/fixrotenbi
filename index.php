@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="dist/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/myCSS.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
@@ -163,22 +164,30 @@
 
 
   <!--section produk -->
-  <section class="mt-10 md:mt-16 px-8 md:px-24">
-    <div class="font-semibold mb-4 md:mb-8 text-xl md:text-6xl text-center md:text-right">
-      <h2>PRODUK <span class="md:block text-primary">KAMI</span></h2>
-    </div>
-    <div class="flex flex-col md:flex-row gap-x-4 w-full">
-      <img src="./components/produk/1.png" class="h-auto w-full md:w-1/2 mr-2">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-x-4 w-full">
-        <?php
-        // Loop untuk menampilkan gambar 6 kali
-        for ($i = 0; $i < 6; $i++) {
-          echo '<img src="./components/produk/2.png" class="w-full h-auto">';
-        }
-        ?>
+  <section class="mx-2 lg:mx-24  mt-10 relative">
+    <h2 class="text-4xl text-end">PRODUK <span class="text-primary font-bold block">KAMI</span> </h2>
+    <div class="content-wrapper flex flex-col lg:flex-row gap-5 relative w-full mt-5">
+      <div class="img-wrapper flex-shrink-0 h-auto relative lg:w-[30vw] ">
+        <img src="./assets/images/produk-main.webp" alt="" class="w-full h-full object-cover" loading="lazy">
+      </div>
+      <div class="w-full ">
+        <section id="looping">
+          <div class="wrapper">
+            <div class="itemLeft item1"><img src="./assets/images/produk-1.webp" alt="" loading="lazy"></div>
+            <div class="itemLeft item2"><img src="./assets/images/produk-2.webp" alt="" loading="lazy"></div>
+            <div class="itemLeft item3"><img src="./assets/images/produk-3.webp" alt="" loading="lazy"></div>
+          </div>
+          <div class="wrapper">
+            <div class="itemRight item1"><img src="./assets/images/produk-4.webp" alt="" loading="lazy"></div>
+            <div class="itemRight item2"><img src="./assets/images/produk-5.webp" alt="" loading="lazy"></div>
+            <div class="itemRight item3"><img src="./assets/images/produk-6.webp" alt="" loading="lazy"></div>
+          </div>
+        </section>
+
       </div>
     </div>
   </section>
+  <!-- end Section produk -->
 
   <!-- Produk Kustom -->
   <section class="mt-10 md:mt-16 px-8 md:px-24">
@@ -195,6 +204,7 @@
         }
         ?>
       </div>
+      <div class="swiper-pagination"></div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
