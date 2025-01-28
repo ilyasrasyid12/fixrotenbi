@@ -70,9 +70,9 @@
 
 
   <!--hero section-->
-  <section>
-    <div class="container grid grid-cols-1 lg:grid-cols-3 relative">
-      <div class="img-wrapper hidden lg:block" relative>
+  <section class=" flex justify-center align-middle   ">
+    <div class="grid grid-cols-1 lg:grid-cols-3 w-full relative ">
+      <div class="img-wrapper hidden lg:block relative w-full" >
         <img src="./assets/images/hero-2.webp" alt="" class="w-full h-full object-cover">
       </div>
       <div class="text-wrapper absolute lg:relative flex flex-col lg:justify-end bottom-0 w-full text-center gap-2  ">
