@@ -115,47 +115,7 @@
   <section class="mx-2 lg:mx-24 relative mt-10">
     <h2 class="text-4xl text-center">JENIS <span class="text-primary font-bold block">ANYAMAN</span> </h2>
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-2 mt-10" id="jenisAnyamanContainer">
-      <!-- <div
-        class="lg:text-center font-semibold flex lg:flex-col gap-4 lg:justify-center items-center overflow-x-scroll lg:overflow-x-hidden">
-        <h4>TUMBUHAN</h4>
-        <div class="content flex flex-col items-center text-center ">
-          <div class="img-wrapper relative h-20 w-20 flex-shrink-0">
-            <img src="./assets/jenis-anyaman/flora1.webp" alt="" class="w-full h-full object-cover">
-          </div>
-          <p class="text-secondary font-normal text-center">Kelerai Tampuk
-            Manggis</p>
-        </div>
-      </div>
-      <div
-        class="lg:text-center font-semibold flex lg:flex-col gap-4 lg:justify-center items-center overflow-x-scroll lg:overflow-x-hidden">
-        <h4>NAMA MANUSIA</h4>
-        <div class="content flex flex-col items-center text-center ">
-          <div class="img-wrapper relative h-20 w-20 flex-shrink-0">
-            <img src="./assets/jenis-anyaman/nama-manusia1.webp" alt="" class="w-full h-full object-cover">
-          </div>
-          <p class="text-secondary font-normal text-center">Kelerai Mak Mek</p>
-        </div>
-      </div>
-      <div
-        class="lg:text-center font-semibold flex lg:flex-col gap-4 lg:justify-center items-center overflow-x-scroll lg:overflow-x-hidden">
-        <h4>HAIWAN</h4>
-        <div class="content flex flex-col items-center text-center ">
-          <div class="img-wrapper relative h-20 w-20 flex-shrink-0">
-            <img src="./assets/jenis-anyaman/fauna1.webp" alt="" class="w-full h-full object-cover">
-          </div>
-          <p class="text-secondary font-normal text-center">Kelerai Jari Kedidi</p>
-        </div>
-      </div>
-      <div
-        class="lg:text-center font-semibold flex lg:flex-col gap-4 lg:justify-center items-center overflow-x-scroll lg:overflow-x-hidden">
-        <h4>ABSTRAK</h4>
-        <div class="content flex flex-col items-center text-center ">
-          <div class="img-wrapper relative h-20 w-20 flex-shrink-0">
-            <img src="./assets/jenis-anyaman/abstrak1.webp" alt="" class="w-full h-full object-cover">
-          </div>
-          <p class="text-secondary font-normal text-center">Kelerai Empak Sebilik</p>
-        </div>
-      </div> -->
+     
     </div>
   </section>
   <!-- end tentang Menganyam -->
@@ -247,21 +207,21 @@
         <div class="line w-full bg-primary h-[2px]"></div>
       </div>
     </div>
-    <div class="mt-5 flex flex-wrap lg:flex-nowrap justify-center items-center gap-4"  id="card-benefit">
+    <div class="mt-5 flex flex-wrap lg:flex-nowrap justify-center items-center gap-4" id="card-benefit">
     </div>
 
   </section>
 
-  <section class="px-8 md:px-24 mt-8 md:mt-16">
-    <div class="flex flex-col md:flex-row items-center gap-4">
+  <section class="mx-2 lg:mx-24 mt-8 md:mt-16 ">
+    <div class="flex flex-col md:flex-row items-center gap-4 pb-1 border-b-[1px] border-black">
       <!-- Kolom Gambar -->
-      <img src="./components/images/menciptakan.png" class="w-full md:w-1/3">
+      <img src="./assets/images/menciptakan-senyuman.webp" class="w-full md:w-1/3">
       <!-- Kolom Teks -->
       <div class="flex flex-col justify-center text-black md:ml-20 md:w-1/3">
-        <h2 class="text-black font-semibold mb-4 text-lg md:text-6xl">
+        <h2 class="text-black font-semibold mb-4 text-4xl">
           Menciptakan Banyak <span class="text-primary">Senyum</span> untuk mereka
         </h2>
-        <p class="text-sm md:text-lg">
+        <p class="text-secondary">
           Rotenbi dapat menciptakan senyum untuk mereka para yang terlibat pada proses kami, sehingga anak-anak dari
           para perajin kami dapat melanjutkan pendidikannya dengan baik.
         </p>
@@ -269,62 +229,68 @@
     </div>
   </section>
 
-  <section class="px-8 md:px-24 mt-10 md:mt-16">
+  <section class="mx-2 lg:mx-24 mt-10 md:mt-16">
     <div class="grid grid-cols-1 md:grid-cols-2">
-      <h2 class="text-xl md:text-6xl w-full font-legular text-black">Informasi Kemitraan & Pelatihan </h2>
-      <p class="text-base md:text-lg md:ml-6">Kami membuka peluang untuk kemitraan dan menyediakan pelatihan berkualitas
+      <h2 class="text-3xl sm:text-4xl w-full font-legular text-black">Informasi Kemitraan & Pelatihan </h2>
+      <p class="text-secondary">Kami membuka peluang untuk kemitraan dan menyediakan pelatihan berkualitas
         bagi Anda yang ingin berkembang bersama kami. Jika Anda memiliki pertanyaan atau membutuhkan informasi lebih
         lanjut, jangan ragu untuk menghubungi kami melalui kontak berikut:</p>
     </div>
     <div class="mt-8 gap-y-6">
-      <div class="flex w-full md:w-1/3 justify-between items-center border-b-2 border-black pb-1 my-4">
+      <a href=""
+        class="flex w-full md:w-1/3 justify-between items-center border-b-[1px] border-black pb-1 my-4 hover:scale-105 transition-all ease-in-out ">
         <div class="flex gap-x-2 items-center">
           <i class="fa-brands fa-whatsapp text-3xl text-primary"></i>
           <h2 class="text-lg md:text-2xl text-primary">Whatsapp</h2>
         </div>
-        <i class="fa-solid fa-arrow-up-right-from-square text-primary text-2xl"></i>
-      </div>
-      <div class="flex w-full md:w-1/3 justify-between items-center border-b-2 border-black pb-1 my-4">
+        <i class="fa-solid fa-arrow-right text-primary text-2xl -rotate-45"></i>
+      </a>
+      <a href=""
+        class="flex w-full md:w-1/3 justify-between items-center border-b-[1px] border-black pb-1 my-4 hover:scale-105 transition-all ease-in-out">
         <div class="flex gap-x-2 items-center">
           <i class="fa-solid fa-envelope text-3xl text-primary"></i>
           <h2 class="text-lg md:text-2xl text-primary">Email</h2>
         </div>
-        <i class="fa-solid fa-arrow-up-right-from-square text-primary text-2xl"></i>
-      </div>
-      <div class="flex w-full md:w-1/3 justify-between items-center border-b-2 border-black pb-1 my-4">
+        <i class="fa-solid fa-arrow-right text-primary text-2xl -rotate-45"></i>
+      </a>
+      <a href=""
+        class="flex w-full md:w-1/3 justify-between items-center border-b-[1px] border-black pb-1 my-4 hover:scale-105 transition-all ease-in-out">
         <div class="flex gap-x-2 items-center">
           <i class="fa-solid fa-location-dot text-3xl text-primary"></i>
           <h2 class="text-lg md:text-2xl text-primary">Location</h2>
         </div>
-        <i class="fa-solid fa-arrow-up-right-from-square text-primary text-2xl"></i>
+        <i class="fa-solid fa-arrow-right text-primary text-2xl -rotate-45"></i>
+      </a>
+    </div>
+  </section>
+
+  <section class="mx-2 lg:mx-24 mt-10 md:mt-16">
+    <div class="grid grid-cols-12">
+      <div class="col-span-2  sm:col-span-3 h-line w-full h-full  flex items-center justify-center">
+        <div class="line w-full bg-primary h-[2px]"></div>
+      </div>
+      <h2 class="col-span-8 sm:col-span-6 text-lg sm:text-4xl text-center font-bold w-full flex-shrink-0">MITRA & KERJA
+        <span class="text-primary ">SAMA</span>
+      </h2>
+      <div class="col-span-2 sm:col-span-3 h-line w-full  h-full flex items-center justify-center">
+        <div class="line w-full bg-primary h-[2px]"></div>
       </div>
     </div>
+    <div id="looping-brand">
+    </div>
   </section>
 
-  <section class="px-8 md:px-24 mt-10 md:mt-16">
-    <h2 class="flex text-black font-semibold text-xl md:text-6xl justify-center mb-8">Mitra dan <span
-        class="text-primary md:ml-4"> Kerjasama</span></h2>
-    <div class="grid grid-cols-4">
-      <img src="./components/mitra/telkom.png" alt="">
-      <img src="./components/mitra/telkom.png" alt="">
-      <img src="./components/mitra/telkom.png" alt="">
-      <img src="./components/mitra/telkom.png" alt="">
-    </div>
-    <div class="mt-8">
-      <div class="grid grid-cols-4">
-        <img src="./components/mitra/telkom.png" alt="">
-        <img src="./components/mitra/telkom.png" alt="">
-        <img src="./components/mitra/telkom.png" alt="">
-        <img src="./components/mitra/telkom.png" alt="">
+  <section class="relative mt-7">
+    <div class="img-wrapper relative w-full h-[230px] md:h-[450px]">
+      <div class="text-wrapper absolute text-white z-10 w-3/4 md:w-1/2 top-1/2 -translate-y-1/2 mx-3">
+        <h3 class="font-bold lg:text-3xl">TERIMAKASIH TELAH MENDUKUNG PEMBERDAYAAN KAMI</h3>
       </div>
+      <div class="gradient absolute w-full h-full bg-gradient-to-r from-black"></div>
+      <img src="./assets/images/thanks-card.webp" alt="" class="w-full h-full object-cover">
     </div>
   </section>
 
-  <section class="p-0 mt-10 md:mt-16">
-    <img src="./components/images/thanks.png" class="w-full h-full">
-  </section>
-
-  <footer class="px-8 md:px-24 mt-10 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:gap-x-24 mb-8">
+  <flass="px-8 md:px-24 mt-10 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:gap-x-24 mb-8">
     <div>
       <h2 class="font-semibold text-xl md:text-2xl text-primary">
         Jangan lewatkan penawaran eksklusif, rilis terbaru, dan inspirasi kami
@@ -383,13 +349,14 @@
         <i class="fa-solid fa-arrow-up-right-from-square text-primary text-2xl lg:hidden"></i>
       </div>
     </div>
-  </footer>
-  <!-- Memuat script untuk Swiper -->
-  <script src="node_modules/swiper/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
-  <script src="./scripts/generateJenisAnyaman.js"></script>
-  <script src="./scripts/generateCardBenefit.js"></script>
-  <!-- Memuat script untuk loading file HTML -->
+    </flass=>
+    <!-- Memuat script untuk Swiper -->
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="./scripts/generateJenisAnyaman.js"></script>
+    <script src="./scripts/generateCardBenefit.js"></script>
+    <script src="./scripts/generateMitra.js"></script>
+    <!-- Memuat script untuk loading file HTML -->
 
 </body>
 
