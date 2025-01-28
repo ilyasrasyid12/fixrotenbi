@@ -1,0 +1,201 @@
+/* looping */
+.wrapper {
+  margin-top: 2rem;
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+@keyframes scrollRight {
+  to {
+    right: -200px;
+  }
+}
+
+.itemLeft,
+.itemRight {
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+  position: absolute;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.itemLeft {
+  left: max(calc(100px * 3), 100%);
+  animation-name: scrollLeft;
+}
+
+.itemRight {
+  right: max(calc(50px * 3), calc(100% + 50px));
+  animation-name: scrollRight;
+}
+
+.item1 {
+  animation-delay: calc(10s / 3 * (3 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(10s / 3 * (3 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(10s / 3 * (3 - 3) * -1);
+}
+
+/* loopong for brand */
+
+/* looping */
+.wrapper-brand {
+  margin-top: 2rem;
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes scrollLeftBrand {
+  to {
+    left: -200px;
+  }
+}
+
+@keyframes scrollRightBrand {
+  to {
+    right: -200px;
+  }
+}
+
+.wrapper-brand:hover .itemLeft-brand,
+.wrapper-brand:hover .itemRight-brand {
+  animation-play-state: paused;
+}
+
+.itemLeft-brand:hover,
+.itemRight-brand:hover {
+  filter: grayscale(0);
+}
+
+.itemLeft-brand,
+.itemRight-brand {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  filter: grayscale(1);
+  border-radius: 6px;
+  position: absolute;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  mix-blend-mode: color-dodge;
+}
+
+.itemLeft-brand {
+  left: max(calc(200px * 16), 100%);
+  animation-name: scrollLeftBrand;
+}
+
+.itemRight-brand {
+  right: max(calc(200px * 16), calc(100% + 200px));
+  animation-name: scrollRightBrand;
+}
+
+.brand-item1 {
+  animation-delay: calc(30s / 16 * (16 - 1) * -1);
+}
+
+.brand-item2 {
+  animation-delay: calc(30s / 16 * (16 - 2) * -1);
+}
+
+.brand-item3 {
+  animation-delay: calc(30s / 16 * (16 - 3) * -1);
+}
+
+.brand-item4 {
+  animation-delay: calc(30s / 16 * (16 - 4) * -1);
+}
+
+.brand-item5 {
+  animation-delay: calc(30s / 16 * (16 - 5) * -1);
+}
+
+.brand-item6 {
+  animation-delay: calc(30s / 16 * (16 - 6) * -1);
+}
+
+.brand-item7 {
+  animation-delay: calc(30s / 16 * (16 - 7) * -1);
+}
+
+.brand-item8 {
+  animation-delay: calc(30s / 16 * (16 - 8) * -1);
+}
+.brand-item9 {
+  animation-delay: calc(30s / 16 * (16 - 9) * -1);
+}
+
+.brand-item10 {
+  animation-delay: calc(30s / 16 * (16 - 10) * -1);
+}
+.brand-item11 {
+  animation-delay: calc(30s / 16 * (16 - 11) * -1);
+}
+.brand-item12 {
+  animation-delay: calc(30s / 16 * (16 - 12) * -1);
+}
+.brand-item13 {
+  animation-delay: calc(30s / 16 * (16 - 13) * -1);
+}
+.brand-item14 {
+  animation-delay: calc(30s / 16 * (16 - 14) * -1);
+}
+.brand-item15 {
+  animation-delay: calc(30s / 16 * (16 - 15) * -1);
+}
+.brand-item16 {
+  animation-delay: calc(30s / 16 * (16 - 16) * -1);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #754e1a; /* Sesuaikan dengan warna primary Anda */
+  font-weight: bold;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #754e1a !important;
+  scale: 1.5;
+}
+
+@media (max-width: 640px) {
+  .wrapper-brand {
+    height: 50px;
+  }
+  .itemLeft-brand,
+  .itemRight-brand {
+    width: 100px;
+    height: 50px;
+  }
+
+  .itemLeft-brand {
+    left: max(calc(100px * 16), 100%);
+  }
+  
+  .itemRight-brand {
+    right: max(calc(100px * 16), calc(100% + 100px));
+  }
+}
