@@ -10,7 +10,7 @@ module.exports = {
         primary: '#754E1A',
       },
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'], // Menambahkan Montserrat sebagai font default
+        montserrat: ['Montserrat', 'sans-serif'], // Menambahkan Montserrat sebagai font default
       },
     },
   },
