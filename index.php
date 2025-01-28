@@ -25,7 +25,7 @@
 
 </head>
 
-<body class="overflow-x-hidden">
+<body class="">
 
 
   <!-- Memuat Header dan Footer -->
@@ -78,11 +78,12 @@
       <div class="text-wrapper absolute lg:relative flex flex-col lg:justify-end bottom-0 w-full text-center gap-2  ">
         <!-- main title -->
         <div class="title lg:absolute lg:mb-0 lg:top-28 lg:-right-1/4 z-10 mb-10">
-          <h1 class="text-7xl font-bold">ROTENBI</h1>
-          <h3 class="text-2xl"><span class="text-primary">Tas Anyaman</span> Berkelanjutan</h3>
+          <h1 class="text-6xl lg:text-7xl font-bold">ROTENBI</h1>
+          <h3 class="text-xl lg:text-2xl"><span class="text-primary">Tas Anyaman</span> Berkelanjutan</h3>
         </div>
         <!-- title 2 -->
-        <h3 class="text-2xl lg:absolute lg:bottom-28 lg:-left-1/4 z-10 order-3 ">Tas Anyaman & Corporate Gift</h3>
+        <h3 class="text-xl lg:text-2xl lg:absolute lg:bottom-28 lg:-left-1/4 z-10 order-3 ">Tas Anyaman & Corporate Gift
+        </h3>
         <!-- button -->
         <div class="flex justify-center mt-4 z-10">
           <button class="px-4 py-2 bg-primary text-white rounded hover:bg-opacity-80">Lihat Selengkapnya</button>
@@ -96,54 +97,70 @@
   <!-- end hero section -->
 
 
-
-  <section
-    class="flex flex-col-reverse md:flex-row md:justify-between px-8 md:px-24 w-full mt-6 md:mt-16 gap-x-8 md:gap-x-56">
-    <!-- Konten -->
-    <div class="md:w-1/2"> <!-- Tambahkan kelas untuk mengatur lebar pada tampilan md -->
-      <div class="flex md:block font-semibold text-xl justify-center md:text-6xl mb-4 mt-4">
-        <h2 >TENTANG <span class="text-primary">MENGANYAM</span></h2>
-
-      </div>
-      <p class="text-sm md:text-lg text-center md:text-left">Menganyam merupakan proses menjalin bilah secara tindih
-        menindih, silang menyilang membentuk suatu jalinan yang indah dan unik. Kegiatan menganyam menjadi kegiatan
-        rutin yang dilakoni para perajin di Rotenbi.</p>
+  <!-- tentang Menganyam -->
+  <section class="flex relative mx-2 lg:mx-24 gap-3 mt-10 flex-col-reverse lg:flex-row  ">
+    <div class="text-wrapper justify-center flex flex-col text-center lg:text-start gap-5 lg:gap-2">
+      <h2 class="text-4xl">TENTANG <span class="text-primary font-bold block">MENGANYAM</span> </h2>
+      <p class="text-secondary">Menganyam merupakan proses menjalin bilah secara tindih
+        menindih,silang menyilang membentuk suatu jalinan yang
+        indah dan unik. Kegiatan menganyam menjadi kegiatan
+        rutin yang dilakoni para perajin di Rotenbi</p>
     </div>
-
-    <!-- Gambar -->
-    <img src="./components/images/Tentang.png" alt="Gambar" class="md:w-full md:h-full mb-4 md:mb-0">
-    <!-- Gambar di atas pada tampilan mobile -->
-  </section>
-
-
-
-  <section class="mb-4 mt-10 md:px-80 md:mt-20">
-    <!--text dan jenis-->
-    <div class="">
-      <div class="flex font-semibold text-xl md:text-6xl mb-8 justify-center">
-        <h2>JENIS <span class="text-primary">ANYAMAN</span></h2>
-      </div>
-      <div class="flex justify-between px-8 md:px-16 md:gap-x-24 text-xl font-semibold">
-        <p>tumbuhan</p>
-        <p>Manusia</p>
-        <p>Hewan</p>
-        <p>Abstrak</p>
-      </div>
-    </div>
-
-    <!--gambarnya-->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-x-2 md:gap-x-8 mt-2 md:mt-10 px-8">
-      <?php
-      // Loop untuk menampilkan gambar 16 kali
-      for ($i = 0; $i < 8; $i++) {
-        echo '<div class="mt-4">';
-        echo '<img src="./components/anyaman/1.png" class="w-full">';
-        echo '<p class="flex items-center text-center text-sm md:text-lg mt-2">Kelerai Tampuk Manggis</p>';
-        echo '</div>';
-      }
-      ?>
+    <div class="img-wrapper h-auto relative lg:w-[40vw] flex-shrink-0">
+      <img src="./assets/images/tentang-menganyam.webp" alt="" class="w-full h-full object-contain">
     </div>
   </section>
+
+  <section class="mx-2 lg:mx-24 relative mt-10">
+    <h2 class="text-4xl text-center">JENIS <span class="text-primary font-bold block">ANYAMAN</span> </h2>
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-2 mt-10" id="jenisAnyamanContainer">
+      <!-- <div
+        class="lg:text-center font-semibold flex lg:flex-col gap-4 lg:justify-center items-center overflow-x-scroll lg:overflow-x-hidden">
+        <h4>TUMBUHAN</h4>
+        <div class="content flex flex-col items-center text-center ">
+          <div class="img-wrapper relative h-20 w-20 flex-shrink-0">
+            <img src="./assets/jenis-anyaman/flora1.webp" alt="" class="w-full h-full object-cover">
+          </div>
+          <p class="text-secondary font-normal text-center">Kelerai Tampuk
+            Manggis</p>
+        </div>
+      </div>
+      <div
+        class="lg:text-center font-semibold flex lg:flex-col gap-4 lg:justify-center items-center overflow-x-scroll lg:overflow-x-hidden">
+        <h4>NAMA MANUSIA</h4>
+        <div class="content flex flex-col items-center text-center ">
+          <div class="img-wrapper relative h-20 w-20 flex-shrink-0">
+            <img src="./assets/jenis-anyaman/nama-manusia1.webp" alt="" class="w-full h-full object-cover">
+          </div>
+          <p class="text-secondary font-normal text-center">Kelerai Mak Mek</p>
+        </div>
+      </div>
+      <div
+        class="lg:text-center font-semibold flex lg:flex-col gap-4 lg:justify-center items-center overflow-x-scroll lg:overflow-x-hidden">
+        <h4>HAIWAN</h4>
+        <div class="content flex flex-col items-center text-center ">
+          <div class="img-wrapper relative h-20 w-20 flex-shrink-0">
+            <img src="./assets/jenis-anyaman/fauna1.webp" alt="" class="w-full h-full object-cover">
+          </div>
+          <p class="text-secondary font-normal text-center">Kelerai Jari Kedidi</p>
+        </div>
+      </div>
+      <div
+        class="lg:text-center font-semibold flex lg:flex-col gap-4 lg:justify-center items-center overflow-x-scroll lg:overflow-x-hidden">
+        <h4>ABSTRAK</h4>
+        <div class="content flex flex-col items-center text-center ">
+          <div class="img-wrapper relative h-20 w-20 flex-shrink-0">
+            <img src="./assets/jenis-anyaman/abstrak1.webp" alt="" class="w-full h-full object-cover">
+          </div>
+          <p class="text-secondary font-normal text-center">Kelerai Empak Sebilik</p>
+        </div>
+      </div> -->
+    </div>
+  </section>
+  <!-- end tentang Menganyam -->
+
+
+
 
   <!--section produk -->
   <section class="mt-10 md:mt-16 px-8 md:px-24">
@@ -356,6 +373,7 @@
   <!-- Memuat script untuk Swiper -->
   <script src="node_modules/swiper/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
+  <script src="./scripts/generateJenisAnyaman.js"></script>
   <!-- Memuat script untuk loading file HTML -->
 
 </body>

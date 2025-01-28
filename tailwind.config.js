@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#754E1A',
+        secondary : '#4C4C4C',
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'], // Menambahkan Montserrat sebagai font default
