@@ -190,17 +190,17 @@
   <!-- end Section produk -->
 
   <!-- Produk Kustom -->
-  <section class="mt-10 md:mt-16 px-8 md:px-24">
-    <div class="font-semibold mb-4 md:mb-8 text-xl md:text-6xl text-center md:text-left">
-      <h2 class="">Produk Kustom <span class="md:block text-primary ">Souvenir</span></h2>
+  <section class="mt-10 md:mt-16 mx-2 lg:mx-24">
+    <div class=" mb-4 ">
+      <h2 class="text-4xl text-start">PRODUK KOSTUM <span class="text-primary font-bold block">SOVUVENIR</span> </h2>
     </div>
     <!-- Gambar scrollable dengan Swiper -->
-    <div class="swiper mySwiper">
+    <div class="swiper mySwiper h-80">
       <div class="swiper-wrapper">
         <?php
         // Loop untuk menampilkan gambar 6 kali
-        for ($i = 0; $i < 6; $i++) {
-          echo '<div class="swiper-slide"><img src="./components/sovenir/1.png" alt="" class="w-full"></div>';
+        for ($i = 1; $i < 5; $i++) {
+          echo '<div class="swiper-slide relative w-full "><img src="./assets/images/collection-' . $i . '.webp" alt="" class="w-full h-full object-contain"></div>';
         }
         ?>
       </div>
@@ -211,26 +211,41 @@
 
     <!-- Tombol di tengah -->
     <div class="flex justify-center mt-4">
-      <button class="px-4 py-2 bg-primary text-white rounded hover:bg-opacity-80">Lihat Selengkapnya</button>
+      <a href="./assets/Rotenbi-Collection_compressed.pdf" download>
+        <button class="px-4 py-2 bg-primary text-white rounded hover:bg-opacity-80">Lihat Selengkapnya</button>
+      </a>
+
     </div>
   </section>
 
-
-  <section class="mt-10 md:mt-16 relative">
-    <img src="./components/images/workshop-kami.png" class="w-full h-60 md:h-full">
-    <div class="absolute inset-0 flex flex-col items-start justify-center px-8 md:px-24 text-white bg-opacity-50">
-      <h2 class=" text-lg md:text-xl font-bold mb-2">Perajin & Workshop Kami</h2>
-      <p class="text-left text-xs md:text-lg mb-2 md:w-1/2">
-        Rotenbi memberdayakan perajin lokal yang dididik khusus menyesuaikan standar kualitas,
-        untuk memperbaiki ekonomi mereka dan kapasitas mereka sebagai perajin dan juga sebagai bentuk partisipasi
-        Rotenbi meningkatkan ekonomi lokal.
-      </p>
+  <!-- workshop -->
+  <section class="relative mt-7">
+    <div class="img-wrapper relative w-full h-[230px] md:h-[450px]">
+      <div class="text-wrapper absolute text-white z-10 w-3/4 md:w-1/2 top-1/2 -translate-y-1/2 mx-3">
+        <h3 class="font-bold lg:text-3xl">Perajin & Workshop Kami</h3>
+        <p class="text-stone-200 text-xs lg:text-base">Rotenbi memberdayakan perajin lokal yang dididik khusus
+          menyesuaikan standar kualitas,
+          untuk memperbaiki ekonomi mereka dan kapasitas mereka sebagai perajin dan juga sebagai bentuk partisipasi
+          Rotenbi meningkatkan ekonomi lokal.</p>
+      </div>
+      <div class="gradient absolute w-full h-full bg-gradient-to-r from-black"></div>
+      <img src="./assets/images/workshop-img.webp" alt="" class="w-full h-full object-cover">
     </div>
   </section>
+  <!-- end worskhop -->
 
-  <section class="px-8 md:px-24 mt-10 md:mt-16">
-    <div class="">
-      <h2 class="flex justify-center font-semibold mb-4 text-xl md:text-6xl text-primary">DAMPAK</h2>
+
+
+
+  <section class="mx-2 lg:mx-24 mt-10 md:mt-16">
+    <div class="grid grid-cols-12">
+      <div class="col-span-2  sm:col-span-4 h-line w-full h-full  flex items-center justify-center">
+        <div class="line w-full bg-primary h-[2px]"></div>
+      </div>
+      <h2 class="col-span-8 sm:col-span-4 text-4xl text-center text-primary font-bold w-full flex-shrink-0">DAMPAK </h2>
+      <div class="col-span-2 sm:col-span-4 h-line w-full  h-full flex items-center justify-center">
+        <div class="line w-full bg-primary h-[2px]"></div>
+      </div>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-4 md:gap-4">

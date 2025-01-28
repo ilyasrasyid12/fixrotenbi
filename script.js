@@ -41,17 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     autoplay: {
       delay: 3000,
     },
-    breakpoints: {
-      640: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 2,
-      },
-    },
+    
   });
 
   // swiper for produk section
