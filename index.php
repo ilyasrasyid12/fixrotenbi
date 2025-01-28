@@ -247,20 +247,9 @@
         <div class="line w-full bg-primary h-[2px]"></div>
       </div>
     </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-4 md:gap-4">
-      <?php
-      // Loop untuk menampilkan gambar 6 kali
-      for ($i = 0; $i < 4; $i++) {
-
-        echo '<div class="flex flex-col items-center mt-8 md:mt-2">';
-        echo '<i class="flex fa-solid fa-hand-holding-droplet fa-2x mt-4 mb-6 text-primary"></i>';
-        echo '<h4 class="font-semibold text-center mb-2">Lingkungan yang lebih hijau</h4>';
-        echo '<p class="px-8 text-sm text-center">Kami mengadopsi pendekatan "zero waste" dan menggunakan bahan anyaman dari serat alam, memastikan produksi kami tidak mencemari tanah maupun air.</p>';
-        echo '</div>';
-      }
-      ?>
+    <div class="mt-5 flex flex-wrap lg:flex-nowrap justify-center items-center gap-4"  id="card-benefit">
     </div>
+
   </section>
 
   <section class="px-8 md:px-24 mt-8 md:mt-16">
@@ -399,6 +388,7 @@
   <script src="node_modules/swiper/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
   <script src="./scripts/generateJenisAnyaman.js"></script>
+  <script src="./scripts/generateCardBenefit.js"></script>
   <!-- Memuat script untuk loading file HTML -->
 
 </body>
