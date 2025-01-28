@@ -163,7 +163,7 @@
         <?php
         // Loop untuk menampilkan gambar 6 kali
         for ($i = 1; $i < 5; $i++) {
-          echo '<div class="swiper-slide relative w-full "><img src="./assets/images/collection-' . $i . '.webp" alt="" class="w-full h-full object-contain"></div>';
+          echo '<div class="swiper-slide relative w-full "><img src="./assets/images/collection-' . $i . '.webp" alt="" class="w-full h-full object-contain scroll-animation"></div>';
         }
         ?>
       </div>
