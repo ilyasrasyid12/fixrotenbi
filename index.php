@@ -16,9 +16,9 @@
         <div class="flex">
           <img src="components/logo/logo.png" class="py-2 w-16 md:w-24 mr-2 md:mr-16">
           <ul id="menu" class="hidden md:flex items-center gap-x-4 md:gap-x-8 text-sm md:text-base">
-            <li><a href="#">Tentang Kami</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Kontak</a></li>
+            <li><a href="./about/">Tentang Kami</a></li>
+            <li><a href="./gallery-page/">Gallery</a></li>
+            <li><a href="./contact/">Kontak</a></li>
           </ul>
         </div>
         <div class="flex items-center gap-x-8">
@@ -148,7 +148,7 @@
     <section class="mt-10 md:mt-16 relative">
       <img src="./components/images/workshop-kami.png" class="w-full h-60 md:h-full">
       <div class="absolute inset-0 flex flex-col items-start justify-center px-8 md:px-24 text-white bg-opacity-50">
-        <h2 class="text-base text-lg md:text-xl font-bold mb-2">Perajin & Workshop Kami</h2>
+        <h2 class=" text-lg md:text-xl font-bold mb-2">Perajin & Workshop Kami</h2>
         <p class="text-left text-xs md:text-lg mb-2 md:w-1/2">
             Rotenbi memberdayakan perajin lokal yang dididik khusus menyesuaikan standar kualitas,
             untuk memperbaiki ekonomi mereka dan kapasitas mereka sebagai perajin dan juga sebagai bentuk partisipasi
@@ -157,9 +157,9 @@
       </div>
     </section>
 
-    <section class="px-8 md:px-24 mt-8 mt-10 md:mt-16">
+    <section class="px-8 md:px-24 mt-10 md:mt-16">
       <div class="">
-        <h2 class="flex text-primary justify-center font-semibold mb-4 text-xl md:text-6xl text-primary">DAMPAK</h2>
+        <h2 class="flex justify-center font-semibold mb-4 text-xl md:text-6xl text-primary">DAMPAK</h2>
       </div>
       
       <div class="grid grid-cols-1 md:grid-cols-4 md:gap-4">
@@ -224,7 +224,7 @@
       </section>
 
       <section class="px-8 md:px-24 mt-10 md:mt-16">
-        <h2 class="flex text-black font-semibold mb-4 text-xl md:text-6xl justify-center mb-8">Mitra dan <span class="text-primary md:ml-4"> Kerjasama</span></h2>
+        <h2 class="flex text-black font-semibold text-xl md:text-6xl justify-center mb-8">Mitra dan <span class="text-primary md:ml-4"> Kerjasama</span></h2>
         <div class="grid grid-cols-4">
           <img src="./components/mitra/telkom.png" alt="">
           <img src="./components/mitra/telkom.png" alt="">
