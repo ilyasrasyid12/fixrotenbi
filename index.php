@@ -70,9 +70,9 @@
 
 
   <!--hero section-->
-  <section class=" flex justify-center align-middle   ">
+  <section class=" flex justify-center align-middle ">
     <div class="grid grid-cols-1 lg:grid-cols-3 w-full relative ">
-      <div class="img-wrapper hidden lg:block relative w-full" >
+      <div class="img-wrapper hidden lg:block relative w-full">
         <img src="./assets/images/hero-2.webp" alt="" class="w-full h-full object-cover">
       </div>
       <div class="text-wrapper absolute lg:relative flex flex-col lg:justify-end bottom-0 w-full text-center gap-2  ">
@@ -102,7 +102,7 @@
     <!-- Konten -->
     <div class="md:w-1/2"> <!-- Tambahkan kelas untuk mengatur lebar pada tampilan md -->
       <div class="flex md:block font-semibold text-xl justify-center md:text-6xl mb-4 mt-4">
-        <h2 class="font-montserrat">TENTANG <span class="text-primary">MENGANYAM</span></h2>
+        <h2 >TENTANG <span class="text-primary">MENGANYAM</span></h2>
 
       </div>
       <p class="text-sm md:text-lg text-center md:text-left">Menganyam merupakan proses menjalin bilah secara tindih
