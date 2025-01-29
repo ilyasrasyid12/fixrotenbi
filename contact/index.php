@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../dist/styles.css" rel="stylesheet">
+  <link href="../dist/scroll-animation.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
   <title>Proyek Tailwind CSS</title>
@@ -13,11 +14,12 @@
     <header class="flex bg-white text-black shadow-xl mb-6">
       <div class="flex justify-between px-8 md:px-24 w-full relative">
         <div class="flex">
-          <img src="../components/logo/logo.png" class="py-2 w-16 md:w-24 mr-2 md:mr-16">
+          <img src="../assets/images/main-logo.webp" class="py-2 w-16 md:w-24 mr-2 md:mr-16">
           <ul id="menu" class="hidden md:flex items-center gap-x-4 md:gap-x-8 text-sm md:text-base">
-            <li><a href="#">Tentang Kami</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Kontak</a></li>
+            <li><a href="../index.php">Utama</a></li>
+            <li><a href="../about/index.php">Tentang Kami</a></li>
+            <li><a href="../gallery-page/index.php">Gallery</a></li>
+            <li><a href="../contact/index.php">Kontak</a></li>
           </ul>
         </div>
         <div class="flex items-center gap-x-8">
@@ -37,6 +39,7 @@
         </button>
       </div>
       <ul class="flex flex-col items-center gap-y-4">
+        <li><a href="../index.php">Utama</a></li>  
         <li><a href="#">Tentang Kami</a></li>
         <li><a href="#">Gallery</a></li>
         <li><a href="#">Kontak</a></li>
@@ -46,28 +49,28 @@
     <!-- Overlay -->
     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
 
-    <section class="px-8 md:px-24 mt-10 md:mt-16">
+    <section class="mx-2 lg:mx-24 mt-10 scroll-animation">
         <div class="md:flex md:flex-row-2">
-            <img src="../components/images/contact.png" class="md:w-3/5 h-full">
+            <img src="../assets/images/kontak-img.webp" class="md:w-3/5 h-full">
             <div class="md:ml-6">
-                <h2 class="text-xl md:text-6xl text-black font-semibold mt-4 md:mt-0 text-center md:text-left">Hubungi <span class="md:block text-primary"> Kami</span></h2>
+                <h2 class="text-4xl text-black font-semibold mt-4 md:mt-0 text-center md:text-left">Hubungi <span class="text-primary"> Kami</span></h2>
                 <div class="flex gap-x-2 items-center mt-6">
-                    <i class="fa-brands fa-whatsapp text-3xl text-primary"></i>
-                    <h2 class="text-lg md:text-2xl text-primary ml-4">+62923824728242</h2>
+                    <i class="fa-brands fa-whatsapp text-4xl text-primary"></i>
+                    <h2 class="text-2xl text-primary ml-4">+62923824728242</h2>
                 </div>
                 <div class="flex gap-x-2 items-center mt-6"><i class=""></i> 
-                    <i class="fa-brands fa-facebook text-3xl text-primary"></i>
-                    <h2 class="text-lg md:text-2xl text-primary ml-4">facebook-name</h2>
+                    <i class="fa-brands fa-facebook text-4xl text-primary"></i>
+                    <h2 class="text-2xl text-primary ml-4">facebook-name</h2>
                 </div>
                 <div class="flex gap-x-2 items-center mt-6">
-                    <i class="fa-solid fa-envelope text-3xl text-primary"></i>
-                    <h2 class="text-lg md:text-2xl text-primary ml-4">user@gmail.com</h2>
+                    <i class="fa-solid fa-envelope text-4xl text-primary"></i>
+                    <h2 class="text-2xl text-primary ml-4">user@gmail.com</h2>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="px-8 md:px-24 mt-8 md:mt-16">
+    <section class="mx-2 lg:mx-24 mt-10 scroll-animation">
         <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31576.307430204073!2d115.34549117088322!3d-8.39788120095577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd21bffa0bae5b7%3A0x31bb37ab6cd12ca8!2sRotenbi%20Bali!5e0!3m2!1sid!2sid!4v1737958983377!5m2!1sid!2sid&zoom=15" 
             width="100%" 
@@ -139,8 +142,8 @@
           </div>
       </div>
     </footer>
-    <!-- Memuat script untuk Swiper -->
-    <script src="../script.js"></script>
+    <!-- Memuat scroll animation -->
+    <script src="../scripts/scroll-animation.js"></script>
     <!-- Memuat script untuk loading file HTML -->
 </body>
 </html>

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../dist/styles.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="../dist/scroll-animation.css" rel="stylesheet">
   <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
   <title>Proyek Tailwind CSS</title>
 </head>
@@ -13,11 +14,12 @@
     <header class="flex bg-white text-black shadow-xl mb-6">
       <div class="flex justify-between px-8 md:px-24 w-full relative">
         <div class="flex">
-          <img src="../components/logo/logo.png" class="py-2 w-16 md:w-24 mr-2 md:mr-16">
+          <img src="../assets/images/main-logo.webp" class="py-2 w-16 md:w-24 mr-2 md:mr-16">
           <ul id="menu" class="hidden md:flex items-center gap-x-4 md:gap-x-8 text-sm md:text-base">
-            <li><a href="#">Tentang Kami</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Kontak</a></li>
+            <li><a href="../index.php">Utama</a></li>  
+            <li><a href="../about/index.php">Tentang Kami</a></li>
+            <li><a href="../gallery-page/index.php">Gallery</a></li>
+            <li><a href="../contact/index.php">Kontak</a></li>
           </ul>
         </div>
         <div class="flex items-center gap-x-8">
@@ -37,29 +39,46 @@
         </button>
       </div>
       <ul class="flex flex-col items-center gap-y-4">
-        <li><a href="#">Tentang Kami</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Kontak</a></li>
+        <li><a href="../about/index.php">Tentang Kami</a></li>
+        <li><a href="index.php">Gallery</a></li>
+        <li><a href="../contact/index.php">Kontak</a></li>
       </ul>
     </div>
     
     <!-- Overlay -->
     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
 
-    <section class="px-8 md:px-24 mt-10 md:mt-16">
+    <section class="mx-2 lg:mx-24 mt-10">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <?php
-          // Loop untuk menampilkan gambar 6 kali
-          for ($i = 0; $i < 12; $i++) {
-              echo '<img src="../gallery/g1.jpg" class="w-full">';
+          // Mengatur jumlah gambar per halaman
+          $imagesPerPage = 12;
+          // Mengambil semua gambar dari direktori
+          $imageFiles = glob('../assets/gallery-img/gallery (*.webp'); // Mengambil semua file .webp
+          $totalImages = count($imageFiles); // Menghitung total gambar
+          // Menghitung total halaman
+          $totalPages = ceil($totalImages / $imagesPerPage);
+          // Mendapatkan halaman saat ini dari query string, default ke 1
+          $currentPage = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+          // Menghitung indeks gambar yang akan ditampilkan
+          $startIndex = ($currentPage - 1) * $imagesPerPage;
+          
+          // Loop untuk menampilkan gambar
+          for ($i = $startIndex; $i < min($startIndex + $imagesPerPage, $totalImages); $i++) {
+              echo '<img src="' . $imageFiles[$i] . '" class="w-full h-60 object-cover scroll-animation">';
           }
         ?>
         </div>
         <!-- Pagination Buttons -->
         <div class="flex justify-center mt-4 md:mt-6 text-white">
-            <button class="bg-primary px-4 py-2 mx-1">1</button>
-            <button class="bg-primary px-4 py-2 mx-1">2</button>
-            <button class="bg-primary px-4 py-2 mx-1">Next</button>
+            <?php for ($page = 1; $page <= $totalPages; $page++): ?>
+                <a href="?page=<?php echo $page; ?>" class="px-4 py-2 mx-1 <?php echo ($page == $currentPage) ? 'font-bold bg-secondary text-primary' : 'bg-primary text-white'; ?>">
+                    <?php echo $page; ?>
+                </a>
+            <?php endfor; ?>
+            <?php if ($currentPage < $totalPages): ?>
+                <a href="?page=<?php echo $currentPage + 1; ?>" class="bg-primary px-4 py-2 mx-1">Next</a>
+            <?php endif; ?>
         </div>
     </section>
     
@@ -123,8 +142,8 @@
           </div>
       </div>
     </footer>
-    <!-- Memuat script untuk Swiper -->
-    <script src="../script.js"></script>
+    <!-- Memuat scroll animation -->
+    <script src="../scripts/scroll-animation.js"></script>
     <!-- Memuat script untuk loading file HTML -->
 </body>
 </html>

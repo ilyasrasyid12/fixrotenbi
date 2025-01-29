@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="dist/styles.css" rel="stylesheet">
   <link rel="stylesheet" href="./dist/myCSS.css">
+  <link href="../dist/scroll-animation.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
@@ -14,9 +15,9 @@
   <title>Proyek Tailwind CSS</title>
 
   <style>
-    * {
-      /* border: 1px solid red !important; */
-    }
+    /* {
+      border: 1px solid red !important; 
+    }*/
 
     body {
       font-family: 'Montserrat', sans-serif;
@@ -33,8 +34,9 @@
   <header class="flex bg-white text-black shadow-xl mb-6">
     <div class="flex justify-between px-8 md:px-24 w-full relative">
       <div class="flex">
-        <img src="components/logo/logo.png" class="py-2 w-16 md:w-24 mr-2 md:mr-16">
+        <img src="./assets/images/main-logo.webp" class="py-2 w-16 md:w-24 mr-2 md:mr-16">
         <ul id="menu" class="hidden md:flex items-center gap-x-4 md:gap-x-8 text-sm md:text-base">
+          <li><a href="./index.php">Utama</a></li>
           <li><a href="./about/">Tentang Kami</a></li>
           <li><a href="./gallery-page/">Gallery</a></li>
           <li><a href="./contact/">Kontak</a></li>
@@ -60,9 +62,10 @@
       </button>
     </div>
     <ul class="flex flex-col items-center gap-y-4">
-      <li><a href="#">Tentang Kami</a></li>
-      <li><a href="#">Gallery</a></li>
-      <li><a href="#">Kontak</a></li>
+      <li><a href="./index.php">Utama</a></li>  
+      <li><a href="./about/index.php">Tentang Kami</a></li>
+      <li><a href="./gallery-page/index.php">Gallery</a></li>
+      <li><a href="./contact/index.php">Kontak</a></li>
     </ul>
   </div>
 
@@ -71,7 +74,7 @@
 
 
   <!--hero section-->
-  <section class=" flex justify-center align-middle ">
+  <section class=" flex justify-center align-middle scroll-animation">
     <div class="grid grid-cols-1 lg:grid-cols-3 w-full relative ">
       <div class="img-wrapper hidden lg:block relative w-full">
         <img src="./assets/images/hero-2.webp" alt="" class="w-full h-full object-cover">
@@ -99,7 +102,7 @@
 
 
   <!-- tentang Menganyam -->
-  <section class="flex relative mx-2 lg:mx-24 gap-3 mt-10 flex-col-reverse lg:flex-row  ">
+  <section class="flex relative mx-2 lg:mx-24 gap-3 mt-10 flex-col-reverse lg:flex-row scroll-animation">
     <div class="text-wrapper justify-center flex flex-col text-center lg:text-start gap-5 lg:gap-2">
       <h2 class="text-4xl">TENTANG <span class="text-primary font-bold block">MENGANYAM</span> </h2>
       <p class="text-secondary">Menganyam merupakan proses menjalin bilah secara tindih
@@ -112,7 +115,7 @@
     </div>
   </section>
 
-  <section class="mx-2 lg:mx-24 relative mt-10">
+  <section class="mx-2 lg:mx-24 relative mt-10 scroll-animation">
     <h2 class="text-4xl text-center">JENIS <span class="text-primary font-bold block">ANYAMAN</span> </h2>
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-2 mt-10" id="jenisAnyamanContainer">
      
@@ -124,7 +127,7 @@
 
 
   <!--section produk -->
-  <section class="mx-2 lg:mx-24  mt-10 relative">
+  <section class="mx-2 lg:mx-24  mt-10 relative scroll-animation">
     <h2 class="text-4xl text-end">PRODUK <span class="text-primary font-bold block">KAMI</span> </h2>
     <div class="content-wrapper flex flex-col lg:flex-row gap-5 relative w-full mt-5">
       <div class="img-wrapper flex-shrink-0 h-auto relative lg:w-[30vw] ">
@@ -150,7 +153,7 @@
   <!-- end Section produk -->
 
   <!-- Produk Kustom -->
-  <section class="mt-10 md:mt-16 mx-2 lg:mx-24">
+  <section class="mt-10 md:mt-16 mx-2 lg:mx-24 scroll-animation">
     <div class=" mb-4 ">
       <h2 class="text-4xl text-start">PRODUK KOSTUM <span class="text-primary font-bold block">SOVUVENIR</span> </h2>
     </div>
@@ -160,7 +163,7 @@
         <?php
         // Loop untuk menampilkan gambar 6 kali
         for ($i = 1; $i < 5; $i++) {
-          echo '<div class="swiper-slide relative w-full "><img src="./assets/images/collection-' . $i . '.webp" alt="" class="w-full h-full object-contain"></div>';
+          echo '<div class="swiper-slide relative w-full "><img src="./assets/images/collection-' . $i . '.webp" alt="" class="w-full h-full object-contain scroll-animation"></div>';
         }
         ?>
       </div>
@@ -179,7 +182,7 @@
   </section>
 
   <!-- workshop -->
-  <section class="relative mt-7">
+  <section class="relative mt-7 scroll-animation">
     <div class="img-wrapper relative w-full h-[230px] md:h-[450px]">
       <div class="text-wrapper absolute text-white z-10 w-3/4 md:w-1/2 top-1/2 -translate-y-1/2 mx-3">
         <h3 class="font-bold lg:text-3xl">Perajin & Workshop Kami</h3>
@@ -197,7 +200,7 @@
 
 
 
-  <section class="mx-2 lg:mx-24 mt-10 md:mt-16">
+  <section class="mx-2 lg:mx-24 mt-10 md:mt-16 scroll-animation">
     <div class="grid grid-cols-12">
       <div class="col-span-2  sm:col-span-4 h-line w-full h-full  flex items-center justify-center">
         <div class="line w-full bg-primary h-[2px]"></div>
@@ -212,7 +215,7 @@
 
   </section>
 
-  <section class="mx-2 lg:mx-24 mt-8 md:mt-16 ">
+  <section class="mx-2 lg:mx-24 mt-8 md:mt-16 scroll-animation">
     <div class="flex flex-col md:flex-row items-center gap-4 pb-1 border-b-[1px] border-black">
       <!-- Kolom Gambar -->
       <img src="./assets/images/menciptakan-senyuman.webp" class="w-full md:w-1/3">
@@ -229,7 +232,7 @@
     </div>
   </section>
 
-  <section class="mx-2 lg:mx-24 mt-10 md:mt-16">
+  <section class="mx-2 lg:mx-24 mt-10 md:mt-16 scroll-animation">
     <div class="grid grid-cols-1 md:grid-cols-2">
       <h2 class="text-3xl sm:text-4xl w-full font-legular text-black">Informasi Kemitraan & Pelatihan </h2>
       <p class="text-secondary">Kami membuka peluang untuk kemitraan dan menyediakan pelatihan berkualitas
@@ -264,7 +267,7 @@
     </div>
   </section>
 
-  <section class="mx-2 lg:mx-24 mt-10 md:mt-16">
+  <section class="mx-2 lg:mx-24 mt-10 md:mt-16 scroll-animation">
     <div class="grid grid-cols-12">
       <div class="col-span-2  sm:col-span-3 h-line w-full h-full  flex items-center justify-center">
         <div class="line w-full bg-primary h-[2px]"></div>
@@ -280,7 +283,7 @@
     </div>
   </section>
 
-  <section class="relative mt-7">
+  <section class="relative mt-7 scroll-animation">
     <div class="img-wrapper relative w-full h-[230px] md:h-[450px]">
       <div class="text-wrapper absolute text-white z-10 w-3/4 md:w-1/2 top-1/2 -translate-y-1/2 mx-3">
         <h3 class="font-bold lg:text-3xl">TERIMAKASIH TELAH MENDUKUNG PEMBERDAYAAN KAMI</h3>
@@ -350,6 +353,8 @@
       </div>
     </div>
     </flass=>
+    <!-- Memuat scroll animation -->
+    <script src="../scripts/scroll-animation.js"></script>
     <!-- Memuat script untuk Swiper -->
     <script src="node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>

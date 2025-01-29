@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../dist/styles.css" rel="stylesheet">
+  <link href="../dist/scroll-animation.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
   <title>Proyek Tailwind CSS</title>
@@ -13,11 +14,12 @@
     <header class="flex bg-white text-black shadow-xl mb-6">
       <div class="flex justify-between px-8 md:px-24 w-full relative">
         <div class="flex">
-          <img src="../components/logo/logo.png" class="py-2 w-16 md:w-24 mr-2 md:mr-16">
+          <img src="../assets/images/main-logo.webp" class="py-2 w-16 md:w-24 mr-2 md:mr-16">
           <ul id="menu" class="hidden md:flex items-center gap-x-4 md:gap-x-8 text-sm md:text-base">
-            <li><a href="#">Tentang Kami</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Kontak</a></li>
+            <li><a href="../index.php">Utama</a></li>
+            <li><a href="../about/index.php">Tentang Kami</a></li>
+            <li><a href="../gallery-page/index.php">Gallery</a></li>
+            <li><a href="../contact/index.php">Kontak</a></li>
           </ul>
         </div>
         <div class="flex items-center gap-x-8">
@@ -37,6 +39,7 @@
         </button>
       </div>
       <ul class="flex flex-col items-center gap-y-4">
+        <li><a href="../index.php">Utama</a></li>  
         <li><a href="#">Tentang Kami</a></li>
         <li><a href="#">Gallery</a></li>
         <li><a href="#">Kontak</a></li>
@@ -46,46 +49,50 @@
     <!-- Overlay -->
     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
 
-    <section class>
-        <img src="../components/images/hero-tentang.png" class="w-full">
+    <section class="relative lg:h-[80vh] scroll-animation">
+        <img src="../assets/images/hero-about.webp" alt="" class="w-full h-full object-cover">
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+            <img src="../assets/images/Logo-transparent.webp" class="w-48 md:w-52 lg:w-60">
+            <h2 class="hidden md:block text-white text-center text-6xl font-bold">ROTENBI</h2>
+        </div>
     </section>
 
-    <section class="px-8 md:px-24 mt-10 md:mt-16 flex flex-col items-center text-center">
-        <h2 class=" font-semibold mb-4 text-4xl text-black md:w-2/3">TENTANG <span class="text-primary">KAMI</span></h2>
-        <p class="text-lg md:text-xl md:w-2/3">Rotenbi adalah industri kriya anyaman yang fokus menciptakan inovasi berkelanjutan yang memiliki nilai seni, budaya, modernisasi, dan ramah lingkungan. Produk yang dihasilkan seperti tas, dompet, souvenir, dan produk unik lainnya.</p>    
+    <section class="mx-2 lg:mx-24 mt-10 flex flex-col items-center text-center scroll-animation">
+        <h2 class="mb-4 text-4xl text-black md:w-2/3">TENTANG <span class="font-bold text-primary">KAMI</span></h2>
+        <p class="md:w-2/3">Rotenbi adalah industri kriya anyaman yang fokus menciptakan inovasi berkelanjutan yang memiliki nilai seni, budaya, modernisasi, dan ramah lingkungan. Produk yang dihasilkan seperti tas, dompet, souvenir, dan produk unik lainnya.</p>    
     </section>
 
-    <section class="px-8 md:px-24 mt-10 md:mt-16 flex flex-col items-center text-center">
-        <h2 class=" font-semibold mb-4 text-4xl text-primary md:w-2/3">VISI</h2>
-        <p class="text-lg md:text-xl md:w-2/3">“Memberdayakan perajin lokal dengan menciptakan produk anyaman berkelanjutan yang mendukung budaya dan ramah lingkungan.”</p>    
+    <section class="mx-2 lg:mx-24 mt-10 flex flex-col items-center text-center scroll-animation">
+        <h2 class=" font-bold mb-4 text-4xl text-primary md:w-2/3">VISI</h2>
+        <p class="md:w-2/3">“Memberdayakan perajin lokal dengan menciptakan produk anyaman berkelanjutan yang mendukung budaya dan ramah lingkungan.”</p>    
     </section>
 
-    <section class="px-8 md:px-24 mt-10 md:mt-16 flex flex-col items-center text-center">
-        <h2 class=" font-semibold mb-4 text-4xl text-primary md:w-2/3">MISI</h2>
-        <p class="text-lg md:text-xl md:w-2/3">“Memberdayakan perajin lokal dengan menciptakan produk anyaman berkelanjutan yang mendukung budaya dan ramah lingkungan.”</p>    
+    <section class="mx-2 lg:mx-24 mt-10 flex flex-col items-center text-center scroll-animation">
+        <h2 class=" font-bold mb-4 text-4xl text-primary md:w-2/3">MISI</h2>
+        <p class="md:w-2/3">“Memberdayakan perajin lokal dengan menciptakan produk anyaman berkelanjutan yang mendukung budaya dan ramah lingkungan.”</p>    
     </section>
 
-    <section class="px-8 md:px-24 mt-10 md:mt-16">
-        <h2 class=" text-2xl md:text-6xl text-black font-semibold mb-4 text-center md:text-left">DAMPAK <span class="md:block text-primary"> POSITIF</span></h2>
+    <section class="mx-2 lg:mx-24 mt-10 scroll-animation">
+        <h2 class=" text-4xl text-black mb-4 text-center md:text-left">DAMPAK <span class="font-bold md:block text-primary"> POSITIF</span></h2>
         <div class="flex flex-col md:flex-row-reverse">
             <div class="md:w-1/2 md:border-l-2 md:border-black">
-                <img src="../components/images/dampak.png" class="w-full md:ml-8">
+                <img src="../assets/images/about-dampak.webp" class="w-full md:ml-8">
             </div>      
-            <p class="text-sm md:w-1/2 mr-6 text-left mt-6 md:mt-0">Rotenbi memberikan dampak nyata bagi para perajin lokal dengan memberdayakan mereka melalui pelatihan khusus untuk memenuhi standar kualitas yang tinggi. Upaya ini tidak hanya meningkatkan ekonomi mereka, tetapi juga memperluas kapasitas mereka sebagai perajin, sekaligus berkontribusi dalam peningkatan ekonomi lokal.<br/><br/>
+            <p class="md:w-1/2 mr-6 text-left mt-6 md:mt-0">Rotenbi memberikan dampak nyata bagi para perajin lokal dengan memberdayakan mereka melalui pelatihan khusus untuk memenuhi standar kualitas yang tinggi. Upaya ini tidak hanya meningkatkan ekonomi mereka, tetapi juga memperluas kapasitas mereka sebagai perajin, sekaligus berkontribusi dalam peningkatan ekonomi lokal.<br/><br/>
             Kami menciptakan kebahagiaan bagi para perajin yang terlibat dalam proses produksi kami, dengan memastikan kesejahteraan mereka. Dengan penghasilan yang lebih baik, para perajin mampu mendukung pendidikan anak-anak mereka, memberikan harapan untuk masa depan yang lebih cerah.<br/><br/>
             Rotenbi juga mengadopsi pendekatan "zero waste" dengan menggunakan  bahan anyaman dari serat alam, memastikan proses produksi kami ramah lingkungan tanpa mencemari tanah atau air. Dengan melibatkan perajin desa, kami tidak hanya menciptakan lapangan kerja yang menjaga keterampilan tradisional, tetapi juga mengurangi ketergantungan pada mesin besar.<br/><br/>
             Setiap pembelian produk kami, seperti tas, dompet, souvenir, dan produk unik lainnya, mendukung kesejahteraan perajin sekaligus memperkuat ekonomi komunitas lokal secara berkelanjutan. Dengan menggabungkan inovasi, tradisi, seni, budaya, dan ramah lingkungan, Rotenbi berkomitmen menciptakan masa depan yang lebih baik, adil, dan berkelanjutan.</p> 
         </div>   
     </section>
 
-    <section class="px-8 md:px-24 mt-10 md:mt-16">
+    <section class="mx-2 lg:mx-24 mt-10 scroll-animation">
         <div class="flex flex-col md:flex-row-reverse items-center justify-center">
             <div class="md:w-1/2 flex justify-center">
-                <img src="../components/images/owner.png" class="w-full h-full md:h-1/2 md:w-1/2 md:mr-20">
+                <img src="../assets/images/NI-KOMANG-ROSIANI.webp" class="w-full h-full md:h-1/2 md:w-1/2 md:mr-20">
             </div>
             <div class="text-left md:w-1/2 flex flex-col mt-6 md:mt-0 md:ml-40">
-                <h2 class="text-xl md:text-5xl font-bold text-primary text-center md:text-left">NI KOMANG ROSIANI</h2>
-                <p class="text-lg md:text-4xl font-bold md:mt-2 text-center md:text-left">Founder Rotenbi Bali</p>
+                <h2 class="text-4xl font-bold text-primary text-center md:text-left">NI KOMANG ROSIANI</h2>
+                <p class="text-4xl font-bold md:mt-2 text-center md:text-left">Founder Rotenbi Bali</p>
             </div>
         </div>
     </section>
@@ -152,7 +159,7 @@
       </div>
     </footer>
     <!-- Memuat script untuk Swiper -->
-    <script src="../script.js"></script>
+    <script src="../scripts/scroll-animation.js"></script>
     <!-- Memuat script untuk loading file HTML -->
 </body>
 </html>
