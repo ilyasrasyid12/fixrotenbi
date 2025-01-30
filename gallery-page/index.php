@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="overflow-x-hidden">
+<html lang="id" class="overflow-x-hidden">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyek Tailwind CSS</title>
+  <link rel="icon" type="image/webp" href="../assets/images/logo-circle.webp">
+  <title>Rotenbi | Galery</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
   <!-- External CSS -->
   <link href="../dist/styles.css" rel="stylesheet">
@@ -22,7 +25,7 @@
   </style>
 </head>
 
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden" data-page="gallery">
 
   <!-- Navbar -->
   <div id="navbar" class="navbar px-7 py-1 drop-shadow-md fixed z-20 w-full transition-all duration-500 ease-in-out">
@@ -101,6 +104,12 @@
       <?php endif; ?>
     </div>
   </section>
+
+  <a href="https://wa.me/+6281339545432" target="_blank"
+    class=" bg-green-400 hover:bg-green-600 h-14 w-14 transition-all duration-300 hover:scale-110 fixed bottom-6 right-6 z-50 rounded-full flex justify-center items-center">
+    <i class="fa-brands fa-whatsapp text-4xl text-white"></i>
+  </a>
+
 
   <div id="footer-container"></div>
 

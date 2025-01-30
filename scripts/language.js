@@ -1,3 +1,50 @@
+const translationsHeader = {
+  'ind': {
+      'home': {
+          'meta-title': 'Rotenbi | Tas Anyaman Berkelanjutan',
+          'meta-description': 'Rotenbi merupakan industri kerajinan tenun berkelanjutan yang menghasilkan produk seni ramah lingkungan, antara lain tas, dompet, dan suvenir. Kami memberdayakan pengrajin lokal untuk menciptakan masa depan yang lebih baik.',
+          'meta-keywords': 'Rotenbi, anyaman, produk berkelanjutan, kerajinan tangan, Rotenbi Bali, Bali'
+      },
+      'about': {
+          'meta-title': 'Rotenbi | Tentang Kami',
+          'meta-description': 'Pelajari lebih lanjut tentang Rotenbi dan misi kami dalam memberdayakan perajin lokal.',
+          'meta-keywords': 'Rotenbi, tentang kami, anyaman, pemberdayaan'
+      },
+      'gallery': {
+          'meta-title': 'Rotenbi | Galeri',
+          'meta-description': 'Lihat koleksi anyaman unik kami di galeri Rotenbi.',
+          'meta-keywords': 'Rotenbi, galeri, anyaman, koleksi'
+      },
+      'contact': {
+          'meta-title': 'Rotenbi | Kontak',
+          'meta-description': 'Hubungi kami untuk informasi lebih lanjut tentang produk anyaman kami.',
+          'meta-keywords': 'Rotenbi, kontak, informasi, layanan pelanggan'
+      }
+  },
+  'eng': {
+      'home': {
+          'meta-title': 'Rotenbi | Sustainable Woven Bags',
+          'meta-description': 'Rotenbi is a sustainable weaving craft industry that produces environmentally friendly art products, including bags, wallets and souvenirs. We empower local craftsmen to create a better future.',
+          'meta-keywords': 'Rotenbi, weaving, sustainable products, handicrafts, Rotenbi Bali, Bali'
+      },
+      'about': {
+          'meta-title': 'Rotenbi | About Us',
+          'meta-description': 'Learn more about Rotenbi and our mission to empower local artisans.',
+          'meta-keywords': 'Rotenbi, about us, weaving, empowerment'
+      },
+      'gallery': {
+          'meta-title': 'Rotenbi | Gallery',
+          'meta-description': 'Check out our unique woven collections at the Rotenbi gallery.',
+          'meta-keywords': 'Rotenbi, gallery, weaving, collections'
+      },
+      'contact': {
+          'meta-title': 'Rotenbi | Contact',
+          'meta-description': 'Get in touch with us for more information about our woven products.',
+          'meta-keywords': 'Rotenbi, contact, information, customer service'
+      }
+  }
+};
+
 const translations = {
     'ind': {
         //header
@@ -81,7 +128,7 @@ const translations = {
       'footer-story': 'Cerita Kami',
       'footer-e-catalogue': 'E-Katalog',
       'footer-contact': 'Kontak',
-      'footer-marketplace': 'Pasar',
+      'footer-marketplace': 'Toko Online',
       'footer-social-media': 'Media Sosial',
 
 
@@ -177,23 +224,28 @@ const translations = {
 
   // Fungsi untuk mengganti bahasa
   function changeLanguage() {
-    const selectedLang = document.getElementById('language').value; // Ambil bahasa yang dipilih
-    const elements = document.querySelectorAll('[data-translate]'); // Ambil semua elemen dengan data-translate
-
+    const selectedLang = document.getElementById('language').value;
+    const elements = document.querySelectorAll('[data-translate]');
+    
     elements.forEach(element => {
-      const key = element.getAttribute('data-translate'); // Ambil key untuk terjemahan
-      if (translations[selectedLang] && translations[selectedLang][key]) {
-        element.innerHTML = translations[selectedLang][key]; // Ganti teks dengan terjemahan yang sesuai, mempertahankan tag HTML
-      }
+        const key = element.getAttribute('data-translate');
+        if (translations[selectedLang] && translations[selectedLang][key]) {
+            element.innerHTML = translations[selectedLang][key];
+        }
     });
-
-    // Menyimpan pilihan bahasa ke localStorage agar tetap konsisten setelah halaman dimuat ulang
+    
+    const page = document.body.getAttribute('data-page') || 'home';
+    if (translationsHeader[selectedLang] && translationsHeader[selectedLang][page]) {
+        document.title = translationsHeader[selectedLang][page]['meta-title'];
+        document.querySelector('meta[name="description"]').setAttribute('content', translationsHeader[selectedLang][page]['meta-description']);
+        document.querySelector('meta[name="keywords"]').setAttribute('content', translationsHeader[selectedLang][page]['meta-keywords']);
+    }
+    
     localStorage.setItem('language', selectedLang);
-  }
+}
 
-  // Memuat bahasa yang dipilih saat halaman dimuat
-  window.onload = function() {
-    const savedLang = localStorage.getItem('language') || 'ind'; // Default ke bahasa Indonesia
+window.onload = function() {
+    const savedLang = localStorage.getItem('language') || 'ind';
     document.getElementById('language').value = savedLang;
-    changeLanguage(); // Sesuaikan bahasa saat halaman dimuat
-  };
+    changeLanguage();
+};

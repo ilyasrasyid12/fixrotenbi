@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="overflow-x-hidden">
+<html lang="id" class="overflow-x-hidden">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyek Tailwind CSS</title>
+  <link rel="icon" type="image/webp" href="../assets/images/logo-circle.webp">
+  <title>Rotenbi | About</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
   <!-- External CSS -->
   <link href="../dist/styles.css" rel="stylesheet">
@@ -22,7 +25,7 @@
   </style>
 </head>
 
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden" data-page="about">
 
   <!-- Navbar -->
   <div id="navbar" class="navbar px-7 py-1 drop-shadow-md fixed z-20 w-full transition-all duration-500 ease-in-out">
@@ -71,10 +74,11 @@
     <!-- Overlay -->
     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
 
-    <section class="relative lg:h-[80vh]" data-aos="fade-up">
+    <section class="relative lg:h-[80vh]">
         <img src="../assets/images/hero-about.webp" alt="tentang Rotenbi" class="w-full h-full object-cover">
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-            <!--img src="../assets/images/Logo-transparent.webp" class="w-48 md:w-52 lg:w-60"-->
+          <img src="../assets/images/transparent-logo.webp" class="w-48 md:w-52 lg:w-60">
+           
             <h2 class="hidden md:block text-white text-center text-6xl font-bold">ROTENBI</h2>
         </div>
     </section>
@@ -96,7 +100,7 @@
           <span class="text-black" data-translate="impact">DAMPAK</span>
           <span class="font-bold md:block text-primary" data-translate="positive"> POSITIF</span></h2>
         <div class="flex flex-col md:flex-row-reverse">
-            <div class="md:w-1/2 md:border-l-2 md:border-black">
+            <div class="md:w-1/2 md:border-l md:border-black">
                 <img src="../assets/images/about-dampak.webp" alt="dampak positif dari Rotenbi" class="w-full md:ml-8">
             </div>      
             <p class="md:w-1/2 mr-6 text-left mt-6 md:mt-0" data-translate="impact-p1">
@@ -115,10 +119,16 @@
             </div>
             <div class="text-left md:w-1/2 flex flex-col mt-6 md:mt-0 md:ml-40">
                 <h2 class="text-3xl md:text-4xl font-bold text-primary text-center md:text-left">NI KOMANG ROSIANI</h2>
-                <p class="text-3xl md:text-4xl font-bold md:mt-2 text-center md:text-left" data-translate="founder">Founder Rotenbi Bali</p>
+                <p class="text-3xl md:text-4xl text-secondary md:mt-2 text-center md:text-left" data-translate="founder">Founder Rotenbi Bali</p>
             </div>
         </div>
     </section>
+
+    <a href="https://wa.me/+6281339545432" target="_blank"
+    class=" bg-green-400 hover:bg-green-600 h-14 w-14 transition-all duration-300 hover:scale-110 fixed bottom-6 right-6 z-50 rounded-full flex justify-center items-center">
+    <i class="fa-brands fa-whatsapp text-4xl text-white"></i>
+  </a>
+
 
 
     <div id="footer-container"></div>
@@ -135,6 +145,7 @@
   <script src="../scripts/generateElements.js"></script>
   <!--mengubah bahasa-->
   <script src="../scripts/language.js"></script>
+
     <!-- Memuat script untuk loading file HTML -->
 </body>
 </html>
