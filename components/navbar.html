@@ -1,0 +1,43 @@
+<!-- Navbar -->
+<div id="navbar" class="navbar px-7 py-1 drop-shadow-md fixed z-20 w-full transition-all duration-500 ease-in-out">
+    <div class="navbar-wrapper grid grid-cols-[50%_30%_20%] md:grid-cols-[10%_80%_10%]">
+      <!-- Logo -->
+      <a href="../" class="w-20 h-20 relative">
+        <img src="../assets/images/transparent-logo.webp" alt="Logo" class="h-full w-full object-contain" />
+      </a>
+
+      <!-- Menu List (Desktop) -->
+      <div class="nav-list hidden md:flex items-center gap-4">
+        <a href="../">Beranda</a>
+        <a href="../about">Tentang Kami</a>
+        <a href="../gallery-page">Gallery</a>
+        <a href="../contact">Kontak</a>
+      </div>
+
+      <!-- Language Selector -->
+      <div class="language flex items-center justify-end bg-transparent">
+        <select id="language" name="language" class="bg-transparent">
+          <option value="ind" selected>IND</option>
+          <option value="eng">ENG</option>
+        </select>
+      </div>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button class="text-black text-3xl block md:hidden" id="menu-button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu"
+    class="fixed right-0 top-0 w-[50vw] h-[100vh] bg-white shadow-lg flex flex-col items-start p-5 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden z-30">
+    <button id="close-button" class="text-black text-3xl self-end">
+      <i class="fas fa-times"></i>
+    </button>
+    <a href="../" class="mb-4 mt-6">Beranda</a>
+    <a href="../about" class="mb-4 ">Tentang Kami</a>
+    <a href="../gallery-page" class="mb-4">Gallery</a>
+    <a href="../contact" class="mb-4">Kontak</a>
+  </div>
+  <!-- end Navbar -->
