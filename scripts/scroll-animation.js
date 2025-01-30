@@ -1,17 +1,21 @@
-// scrollAnimation.js
-document.addEventListener("DOMContentLoaded", function () {
-    const elements = document.querySelectorAll('.scroll-animation');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Hentikan pengamatan setelah elemen terlihat
-            }
-        });
+// Fungsi untuk smooth scroll
+function smoothScroll(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+    
+    targetElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
     });
-
-    elements.forEach(element => {
-        observer.observe(element);
+  }
+  
+  // Tambahkan event listener ke semua link yang mengarah ke section
+  document.addEventListener('DOMContentLoaded', function() {
+    const scrollLinks = document.querySelectorAll('a[href^="#"]');
+    scrollLinks.forEach(link => {
+      link.addEventListener('click', smoothScroll);
     });
-});
+  });
+  
+  
