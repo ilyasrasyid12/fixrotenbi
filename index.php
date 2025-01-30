@@ -14,7 +14,7 @@
   <meta name="keywords" content="">
 
 
-  <link href="dist/styles.css" rel="stylesheet">
+  <link href="./dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="./dist/myCSS.css">
   <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
   <script src="https://cdn.tailwindcss.com"></script>

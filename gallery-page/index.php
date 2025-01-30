@@ -10,7 +10,7 @@
   <meta name="keywords" content="">
 
   <!-- External CSS -->
-  <link href="../dist/styles.css" rel="stylesheet">
+  <link href="../dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
   <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
